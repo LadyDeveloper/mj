@@ -5,85 +5,143 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MJ - Real Estate</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Courgette|Fredoka+One|Monoton|Bungee+Inline&display=swap" rel="stylesheet">  
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <div class="container-fluid">
-        <div class="row">
-            <ul class="nav justify-content-center">
-                <li class="nav-item">
-                  <a class="nav-link active" href="#">LOGO</a>
-                </li>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">MJ</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
                 <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#">Buy</a>
-                  <div class="dropdown-menu">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#">Buy</a>
+                <div class="dropdown-menu">
                     <a class="dropdown-item" href="#">New Homes</a>
                     <a class="dropdown-item" href="#">Open Houses</a>
-                  </div>
+                </div>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#">Rent</a>
                     <div class="dropdown-menu">
-                      <a class="dropdown-item" href="#">Houses for Rent</a>
-                      <a class="dropdown-item" href="#">Rooms for Rent</a>
-                      <a class="dropdown-item" href="#">Apartments for Rent</a>
+                    <a class="dropdown-item" href="#">Houses for Rent</a>
+                    <a class="dropdown-item" href="#">Rooms for Rent</a>
+                    <a class="dropdown-item" href="#">Apartments for Rent</a>
                     </div>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Sign up or Log in</a>
-                </li>
-              </ul>
+            </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <button class="btn btn-primary my-2 my-sm-0" type="button">Sign up or Log in</button>
+          </form>
         </div>
+      </nav>
+
+    <div class="jumbotron jumbotron-fluid bg-white m-5">
         <div class="row">
-            <div class="card bg-dark text-white">
-                <img class="card-img" src="img/daniel-barnes-RKdLlTyjm5g-unsplash.jpg" alt="Card image">
-                <div class="card-img-overlay">
-                  <h3 class="card-title text-center">MJ Real Estate</h3>
+            <div class="col-5"> 
+                <img class="img-fluid" src="img/bg7-1.png" alt="Card image">
+            </div>
+            <div class="col justify-content-end text-center pt-5">
+                <h1 class="display-1">MJ Real Estate</h1>
+                <blockquote class="blockquote">
+                    <p>Home is where your rump rests.</p>
+                    <footer class="blockquote-footer"><cite title="Source Title">Lion King</cite></footer>
+                </blockquote>
+                <p class="text">Find the best, exclusive places for rent, buy or even stay temporarily.</p>
+                <div class="row m-3  justify-content-center">
+                  <div class="input-group" style="max-width: 60%">
+                      <input type="text" class="form-control" placeholder="Las Vegas, NV" aria-label="Las Vegas, NV" aria-describedby="basic-addon2">
+                      <div class="input-group-append">
+                        <button class="btn btn-primary" type="button">Search</button>
+                      </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- 
+    <div class="container-fluid">
+        <div class="row">
+            <div class="card">
+                <img class="card-img img-fluid rounded mx-auto d-block" src="img/daniel-barnes-RKdLlTyjm5g-unsplash.jpg" alt="Card image">
+                <div class="card-img-overlay text-sm-center mx-auto">
+                  <h3 class="card-title">MJ Real Estate</h3>
                   <p class="card-text">Home is where your rump rests.</p>
                   <p class="card-text">Find your home</p>
+                  <div class="row m-3  justify-content-center">
+                    <div class="input-group" style="max-width: 60%">
+                        <input type="text" class="form-control" placeholder="Las Vegas, NV" aria-label="Las Vegas, NV" aria-describedby="basic-addon2">
+                        <div class="input-group-append">
+                          <button class="btn btn-primary" type="button">Search</button>
+                        </div>
+                    </div>
+                </div>
                 </div>
               </div>
         </div>
-        <!-- <div class="row">
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="..." alt="Card image cap">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-        </div> -->
-        <div class="row mt-3">
-            <div class="card-deck">
-                <div class="card">
-                  <img class="card-img-top mx-auto p-3" style="width: 200px" src="img/real_estate_agent.png" alt="Card image cap">
+    </div> -->
+
+    <div class="container-fluid">
+        <h5 class="display-2 text-center">Explore the best on Las Vegas</h5>
+        <div class="row m-3">
+            <div class="card-deck text-center">
+                <div class="card m-3">
+                  <img class="card-img-top mx-auto" src="img/ralph-kayden-vbSRUrNm3Ik-unsplash.jpg" alt="Card image cap">
                   <div class="card-body">
                     <h5 class="card-title">BUY</h5>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    <a href="#" class="btn btn-primary">Find a place to own</a>
+                    <p class="card-text">The best properties listed for your to choose.</p>
+                    <a href="#" class="btn btn-primary">Find a place</a>                   
                   </div>
                 </div>
-                <div class="card">
-                  <img class="card-img-top mx-auto p-3" style="width: 200px" src="img/piggy_bank.png" alt="Card image cap">
+                <div class="card m-3">
+                  <img class="card-img-top mx-auto" src="img/jesse-roberts-561igiTyvSk-unsplash.jpg" alt="Card image cap">
                   <div class="card-body">
                     <h5 class="card-title">RENT</h5>
-                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                    <a href="#" class="btn btn-primary">Find rent or share</a>
+                    <p class="card-text">Find exclusive and accessible houses, apartments for rent .</p>
+                    <a href="#" class="btn btn-primary">Find a place</a>
                   </div>
                 </div>
-                <div class="card">
-                    <img class="card-img-top mx-auto p-3" style="width: 220px" src="img/online_payment_.png" alt="Card image cap">
+                <div class="card m-3">
+                    <img class="card-img-top mx-auto" src="img/bedroom-1940169_1920.jpg" alt="Card image cap">
                     <div class="card-body">
-                      <h5 class="card-title">RENT</h5>
-                      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                      <a href="#" class="btn btn-primary">Find rent or share</a>
+                      <h5 class="card-title">ROOM FOR SHARE</h5>
+                      <p class="card-text">Find a room for share with incredibles roomates.</p>
+                      <a href="#" class="btn btn-primary">Find a place</a>
                     </div>
                   </div>
-
               </div>
         </div>
     </div>
+    <div class="container-fluid">
+        <div style="width: 100%">
+            <iframe width="100%" height="600" src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;coord=36.1672559, -115.1485163&amp;q=Las%20Vegas+(MJ%20Real%20Estate)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+                <a href="https://www.maps.ie/coordinates.html"></a>
+            </iframe>
+        </div>
+    </div>
+    
+        <!-- <div class="container-fluid">
+            <div class="map-responsive">
+           <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&q=Eiffel+Tower+Paris+France" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+        </div> -->
+
+<footer class="footer mt-5 sticky-bottom">
+    <div class="container-fluid">
+        <div class="row  justify-content-center">
+            <div class="pr-5">
+                <a class="btn btn-lg btn-social-icon btn-instagram" href="http://instagram.com/"><i class="fa fa-instagram"></i></a>
+                <a class="btn btn-lg btn-social-icon btn-facebook" href="http://facebook.com/"><i class="fa fa-facebook"></i></a>
+                <a class="btn btn-lg btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
+                <a class="btn btn-lg btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
+            </div>
+        </div>
+    </div>
+</footer>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
